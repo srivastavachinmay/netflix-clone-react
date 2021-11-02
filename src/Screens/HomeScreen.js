@@ -1,8 +1,8 @@
-import React    from 'react';
-import Nav      from "./Nav";
-import Banner   from "./Banner";
+import React  from 'react';
+import Nav    from "./Components/Nav";
+import Banner from "./Components/Banner";
 import './HomeScreen.css'
-import Row      from "./Row";
+import Row      from "./Components/Row";
 import requests from "../Request";
 
 

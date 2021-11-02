@@ -1,10 +1,7 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import firebase from 'firebase';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCFwtnWgPUslkUqXl8SZBxNb_MslO1A4to",
     authDomain: "netflix-clone-react-8e695.firebaseapp.com",
@@ -15,9 +12,9 @@ const firebaseConfig = {
   };
   
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const db = app.firestore();
-const auth=firebase.auth();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore();
+const auth=getAuth();
 
 export {auth}
 export default db
